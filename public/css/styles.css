@@ -11,12 +11,19 @@ body{
 
 header{
     background-color: #EAC926;
-    padding-bottom: 20px;
 }
 
-.banner{
-    width: 100%;
+.header__img{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
 
+.header__banner{
+    width: 100%;
+    margin-top: 20px;
+    display: block;
 }
 
 main{
@@ -67,19 +74,35 @@ nav li{
 }
 
 nav ul{
-    padding-left: 0px;
+    padding-left: 20px;
+}
+
+.nav__site-bar{
+    display: none;
+
+}
+
+.nav__site-bar__ul{
+    margin: 0;
+}
+
+.nav__login-bar{
+    display: none;
+}
+
+.nav__login-bar__ul{
+    margin: 0;
 }
 
 .search-bar{
-    margin-top: 30px;
-    padding-left: 10px;
+    margin-bottom: 30px;
+    padding-left: 20px;
 }
 
 .search-input{
     border-radius: 3px; 
     border-width: 1px;
     margin-bottom: 2px;
-
 }
 
 .search-icon {
@@ -89,6 +112,8 @@ nav ul{
     border-color: #797979;
     border-width: 1px;
     border-radius: 2px; 
+    margin-left: 3px;
+    padding: 1px 1px;
 }
 
 i{
@@ -100,6 +125,7 @@ i{
 span{
     display: block;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .burger-menu{
@@ -178,6 +204,10 @@ footer{
 .producto__detalles i{
     color: green;
     text-align: left;
+    font-size: large;
+    border: 1px green solid;
+    border-radius: 30px;
+    padding: 10px 10px;
 }
 
 .producto__contenedor{
@@ -202,6 +232,18 @@ footer{
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .nav__site-bar{
+        display: inline;
+    }
+    
+    .nav__login-bar{
+        display: inline;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
 }
 
 /* Para tablet */
@@ -214,4 +256,17 @@ footer{
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .nav__site-bar{
+        display: inline;
+    }
+    
+    .nav__login-bar{
+        display: inline;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
 }

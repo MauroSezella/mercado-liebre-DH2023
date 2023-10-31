@@ -182,12 +182,11 @@ footer{
 
 .producto__contenedor{
     padding: 0;
-    margin-bottom: -4px;
 }
 
 .producto__imagen{
     width: 100%;
-    margin: auto;
+    display: block;
 }
 
 

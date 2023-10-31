@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EBEBEB ;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin:0;
+}
+
+header{
+    background-color: #EAC926;
+    padding-bottom: 20px;
+}
+
+.banner{
+    width: 100%;
+
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+.main__titulo{
+    font-size: 24px;
+    text-align: left;
+    color: #4d4d4d;
+}
+
+p{
+    font-size: 12px;
+}
+
+.precio{
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 2px;
+}
+
+.descuento{
+    font-size: 16px;
+    text-align: left;
+    color: green;
+    line-height: 2px;
+    padding-bottom: 20px;
+    
+}
+
+.descripcion{
+    font-size: 16px;
+    text-align: left;
+    color: #686B61;
+    display: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li{
+    list-style:none;
+}
+
+nav ul{
+    padding-left: 0px;
+}
+
+.search-bar{
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.search-input{
+    border-radius: 3px; 
+    border-width: 1px;
+    margin-bottom: 2px;
+
+}
+
+.search-icon {
+    background-color: #ebebeb;
+    color: black;
+    border-style: solid;
+    border-color: #797979;
+    border-width: 1px;
+    border-radius: 2px; 
+}
+
+i{
+    font-size: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+span{
+    display: block;
+    text-align: center;
+}
+
+.burger-menu{
+    
+    background-color:#0044AA;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-left: 45%;
+
+}
+
+.fa-bars{
+    font-size: large;
+    color: white;
+}
+
+
+footer article{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+footer h5{
+    margin: 0;
+    font-size: medium;
+    color: #4d4d4d;
+}
+
+footer article p{
+
+    margin: 0;
+    padding-left: 75px;
+    padding-right: 75px;
+    color: #666;
+     
+}
+
+footer i{
+    color: #0044AA;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    
+}
+
+footer{
+    background-color: white;
+    width:100vw;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    
+}
+
+.copyright{
+    padding-left: 40px;
+    color: #666;;
+}
+
+.producto{
+    margin-bottom: 10px;
+}
+
+.producto__detalles{
+    border-top: solid 1px #ebebeb ;
+    background-color: white;
+    width: 100%;
+    padding: 15px 15px;
+
+}
+
+.producto__detalles i{
+    color: green;
+    text-align: left;
+}
+
+.producto__contenedor{
+    padding: 0;
+    margin-bottom: -4px;
+}
+
+.producto__imagen{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+/* Para desktop */
+@media (min-width: 769px){
+
+    .descripcion{
+        display: inline-block;
+    }
+
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/* Para tablet */
+@media (min-width: 361px){
+    
+    .descripcion{
+        display: inline-block;
+    }
+
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}

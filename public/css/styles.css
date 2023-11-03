@@ -238,6 +238,7 @@ footer{
     }
 
     .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 48%;
     }
 
@@ -262,16 +263,6 @@ footer{
     
     }
 
-    .search-input{
-        width: 57%;
-        position: relative;
-    }
-
-    .search-icon{
-        position: relative;
-        border: 0.5px solid gray;
-        right: 0px;
-    }
 }
 
 @media (min-width: 769px){
@@ -296,7 +287,6 @@ footer{
     }
 
     .producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 23%;
     }
 
@@ -328,6 +318,13 @@ footer{
 
     .search-input{
         width: 80%;
+        position: relative;
+    }
+
+    .search-icon{
+        position: relative;
+        border: 0.5px solid gray;
+        right: 0px;
     }
 
    

@@ -83,6 +83,7 @@ p{
     display: none;
 }
 
+
 .nav-bar{
     display: none;
     padding: 0 15px;
@@ -101,13 +102,16 @@ p{
     padding: 5px 5px;
 }
 
+.header__search-bar{
+    position: relative;
+}
+
 .search-input{
     width: 100%;
     border-radius: 5px; 
     border-width: 0px;
     margin-bottom: 2px;
     padding: 10px 10px;
-    position: relative;
 }
 
 .search-icon {
@@ -115,7 +119,7 @@ p{
     color: #5b5b5b;
     border-radius: 5px; 
     padding: 10px;
-    right: 20px;
+    right: 1%;
     position: absolute;
  
 }
@@ -159,14 +163,19 @@ footer h5{
     color: #4d4d4d;
 }
 
-footer article p{
+.footer__tarjeta{
+    color: #666;   
+}
 
-    margin: 0;
-    padding-left: 75px;
-    padding-right: 75px;
+.footer__envio{
     color: #666;
      
 }
+
+.footer__seguro{
+    color: #666;  
+}
+
 
 footer i{
     color: #0044AA;
@@ -176,10 +185,13 @@ footer i{
 }
 
 footer{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width:100vw;
     padding-bottom: 10px;
     padding-top: 50px;
+    margin-top: 50px;
     
 }
 
@@ -231,20 +243,20 @@ footer{
 }
 
 
-@media (min-width: 361px){
+@media (min-width: 769px){
     
-    .descripcion{
-        display: inline-block;
-    }
-
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 48%;
     }
 
+    .descripcion{
+        display: block;
+    }
+
     .producto__detalles{
-        height: 150px;
         padding: 15px 10px;
+        height: 125px;
     }
 
     .productos{
@@ -252,6 +264,7 @@ footer{
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .header__encabezado{
         display: flex;
         flex-wrap: wrap;
@@ -265,7 +278,7 @@ footer{
 
 }
 
-@media (min-width: 769px){
+@media (min-width: 1024px){
 
 
     .header__logo{
@@ -281,9 +294,34 @@ footer{
         margin-top: 0px;
     }
 
-
     .descripcion{
-        display: inline-block;
+        display: none;
+    }
+
+
+    .producto:hover .descripcion{
+        display: block;
+    }
+
+    .producto:hover{
+        box-shadow: 0px 0px 20px rgb(4, 4, 4);
+    }
+
+    .productos{
+        align-items: flex-start;
+    }
+
+    .producto{
+        transition-duration: 1s;
+   
+    }
+
+    .producto__detalles-icon{
+        transition: all 1s;
+    }
+
+    .producto__detalles-icon:hover{
+        transform: rotate(-90deg);
     }
 
     .producto{
@@ -291,7 +329,6 @@ footer{
     }
 
     .producto__detalles{
-        height: 150px;
         padding: 15px 14px;
     }
 
@@ -318,14 +355,11 @@ footer{
 
     .search-input{
         width: 80%;
-        position: relative;
     }
 
     .search-icon{
         position: relative;
-        border: 0.5px solid gray;
         right: 0px;
     }
-
    
 }

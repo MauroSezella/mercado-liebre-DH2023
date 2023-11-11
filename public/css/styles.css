@@ -87,6 +87,7 @@ p{
 .nav-bar{
     display: none;
     padding: 0 15px;
+    padding-bottom: 20px;
 }
 
 .nav-bar ul{
@@ -118,6 +119,7 @@ p{
     background-color: white;
     color: #5b5b5b;
     border-radius: 5px; 
+    border: none;
     padding: 10px;
     right: 1%;
     position: absolute;
@@ -133,6 +135,9 @@ span{
     text-align: center;
 }
 
+.burger-menu{
+    padding-bottom: 20px;
+}
 
 .burger-menu__boton{
     color: white;
@@ -150,7 +155,15 @@ span{
 }
 
 
-footer article{
+footer{
+    background-color: white;
+    width:100vw;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.footer{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -163,37 +176,27 @@ footer h5{
     color: #4d4d4d;
 }
 
-.footer__tarjeta{
+.footer__detalles{
     color: #666;   
 }
 
-.footer__envio{
-    color: #666;
-     
-}
-
-.footer__seguro{
-    color: #666;  
-}
-
-
-footer i{
+.footer__icon i{
     color: #0044AA;
     font-size: xx-large;
     margin-bottom: 10px;
     
 }
 
-footer{
+.footer__container{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    width:100vw;
-    padding-bottom: 10px;
-    padding-top: 50px;
-    margin-top: 50px;
-    
 }
+
+.footer__container-copy{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .copyright{
     padding-left: 40px;
@@ -242,6 +245,98 @@ footer{
     align-items: center;
 }
 
+.title-register{
+    font-size: 20px;
+    text-align: center;
+    color: #4d4d4d;
+}
+
+.title-login{
+    font-size: 20px;
+    text-align: center;
+    color: #4d4d4d;
+}
+
+.form__control{
+    padding: 20px 10px;
+}
+
+.form__control-field{
+    padding: 10px 10px;
+    display: block;
+}
+
+.form__control-label{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.form__control-input{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.form__control-radio{
+   margin-right: 30px;
+   margin-left: 20px;
+}
+
+.form__control-checkbox{
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.form__control-botonera{
+    padding: 10px 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.form__control-botonera-login{
+    padding: 10px 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form__control-button-reset{
+    padding: 10px 10px;
+    margin-left: 25px;
+    border: none;
+    background-color:#0044AA;
+    color: white;
+    border-radius: 5px;
+}
+
+.form__control-button-submit{
+    padding: 10px 10px;
+    margin-left: 25px;
+    border: none;
+    background-color:#39b54a;
+    color: white;
+    border-radius: 5px;
+}
+
+.form__control-button-login{
+    padding: 10px 10px;
+    border: none;
+    background-color:#0044AA;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
 
 @media (min-width: 769px){
     
@@ -274,6 +369,10 @@ footer{
     .header__texto{
         margin-top: 20px;
     
+    }
+
+    .form__control{
+        padding: 0% 15%;
     }
 
 }
@@ -361,5 +460,22 @@ footer{
         position: relative;
         right: 0px;
     }
+
+    .footer__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer{
+        width: 30%;
+    }
    
+    .footer__icon i:hover{
+        color: #EAC926;
+    }
+
+    .footer__icon i{
+        transition: all 1s;
+    }
 }

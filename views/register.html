@@ -17,70 +17,105 @@
 </head>
 <body>
     
-    <header></header>
+    <header>
+
+        <div class="header__encabezado">
+   
+           <div class="header__logo">
+               <a href="./"><img src="/images/logo-mercado-liebre.svg" class="header__img" alt="" /></a>
+           </div>
+
+        </div>
+     
+    </header>
 
 
     <main>
 
-        <form action="./">
+        <h4 class="title-register">Ingresá tus datos para registrarte</h4>
 
-        <label> Nombre y Apellido: <input type="text"></label>
-        <br>
+        <form action="./" class="form__control">
 
-        <label> Nombre de usuario: <input type="text"></label>
-        <br>
+        <div class="form__control-field">
+            <label class="form__control-label" for="nombreyApellido"> Nombre y Apellido</label> 
+            <input type="text" name="nombreyApellido" id="nombreyApellido" class="form__control-input">
+        </div>
 
-        <label> Email: <input type="email"></label>
-        <br>
+        <div class="form__control-field">
+            <label class="form__control-label" for="nombreUsuario"> Nombre de usuario</label>
+            <input type="text" name="nombreUsuario" id="nombreUsuario" class="form__control-input">
+        </div>
 
-        <label> Fecha de nacimiento: <input type="date"></label>
-        <br>
+        <div class="form__control-field">
+            <label class="form__control-label" for="email"> Email</label>
+            <input type="email" name="email" id="email" class="form__control-input">
+        </div class="form__control-field">
 
-        <label> Domicilio: <input type="text"></label>
-        <br>
+        <div class="form__control-field">
+            <label class="form__control-label" for="fechaNacimiento"> Fecha de nacimiento</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="form__control-input">
+        </div class="form__control-field">
 
-        <label> Perfil de Usuario:
-            <br>
-            <label>Comprar <input type="radio" id="comprar" name="perfilDeUsuario"></label>
-            <label>Vender <input type="radio" id="vender" name="perfilDeUsuario"></label>
-        </label>
-        <br>
+        <div class="form__control-field">
+            <label class="form__control-label" for="domicilio"> Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio" class="form__control-input">
+        </div>
 
-        <label>Categorias de Interes:
-            <br>
-            <input type="checkbox" id="electro" name="electro"><label>Electro</label>
-            <br>
-            <input type="checkbox" id="moda" name="moda"><label>Moda</label>
-            <br>
-            <input type="checkbox" id="hogar" name="hogar"><label>Hogar</label>
-            <br>
-            <input type="checkbox" id="jugueteria" name="jugueteria"><label>Jugueteria</label>
-            <br>
-            <input type="checkbox" id="vidaSana" name="vidaSana"><label>Vida Sana</label>
-            <br>
-        </label>
+        <div class="form__control-field">
+            <label class="form__control-label"> Perfil de Usuario</label><br>
 
-        <label>Foto de Usuario: <input type="file"></label>
-        <br>
+            <input type="radio" name="perfilDeUsuario" id="comprar" value="comprar" class="form__control-radio">
+            <label for="comprar" class="form__control-label">Comprar</label>
 
-        <label>Constraseña: <input type="password"></label>
-        <br>
+            <input type="radio" name="perfilDeUsuario" id="vender" value="vender" class="form__control-radio">
+            <label for="vender" class="form__control-label">Vender</label>
+           
+        </div>
 
-        <label>Confirmar Contraseña: <input type="password"></label>
-        <br>
+        <div class="form__control-field"> 
+            <label class="form__control-label">Categorias de Interes:</label>
+                <br>
+                <input type="checkbox" name="categoria" value="electro" id="electro" class="form__control-checkbox">
+                <label for="electro" class="form__control-label">Electro</label>
+                <br>
+                <input type="checkbox" name="categoria" value="moda"  id="moda" class="form__control-checkbox">
+                <label for="moda" class="form__control-label">Moda</label>
+                <br>
+                <input type="checkbox" name="categoria" value="hogar" id="hogar" class="form__control-checkbox">
+                <label for="hogar" class="form__control-label">Hogar</label>
+                <br>
+                <input type="checkbox" name="categoria" value="jugueteria" id="jugueteria" class="form__control-checkbox">
+                <label for="jugueteria" class="form__control-label">Jugueteria</label>
+                <br>
+                <input type="checkbox" name="categoria" value="vidaSana" id="vidaSana" class="form__control-checkbox">
+                <label  for="vidaSana" class="form__control-label">Vida Sana</label>   
+        </div>
 
-        <button type="reset">Limpiar</button>
-        <button type="submit">Enviar</button>
+        <div class="form__control-field">
+            <label class="form__control-label">Foto de Usuario: <input type="file" name="avatar" accept=".jpg .png" class="form__control-input"></label>
+        </div class="form__control-field">
+
+        <div class="form__control-field"> 
+            <label class="form__control-label">Contraseña</label>
+            <input type="password" name="password" class="form__control-input">
+        </div class="form__control-field">
+
+        <div class="form__control-field"> 
+            <label class="form__control-label">Confirmar contraseña</label>
+            <input type="password" name="confirmPassword" class="form__control-input">
+        </div>
+
+        <div class="form__control-botonera">
+            <button type="reset" class="form__control-button-reset">Limpiar</button>
+            <button type="submit" class="form__control-button-submit">Enviar</button>
+        </div>
 
         
     </form>
        
 
-
-
     </main>
 
-    <footer></footer>
 
 </body>
 </html>

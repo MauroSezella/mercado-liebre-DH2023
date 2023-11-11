@@ -478,4 +478,14 @@ html {
     .footer__icon i{
         transition: all 1s;
     }
+
+
+    .form__control-button-login:hover{
+        background-color: #0022AA;
+    }
+
+    .form__control-button-login{
+        transition: all 0.5s;
+    }
+
 }

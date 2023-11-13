@@ -4,7 +4,7 @@ const app = express();
 
 let port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log('Servidor Corriendo'));
+app.listen(port, () => console.log('Servidor Corriendo en el puerto ' + port));
 
 app.use(express.static('public'));
 
